@@ -1,0 +1,62 @@
+<div class="container">
+    <div class="level">
+        <div class="level-left">
+            <h1 class="level-item title is-5 has-text-centered">yesterday</h1>
+        </div>
+
+        <div class="level-center">
+            <h1 class="level-item title has-text-centered">{{date | date}}</h1>
+        </div>
+        
+        <div class="level-right">
+            <h1 class="level-item title is-5 has-text-centered">tomorrow</h1>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="field">
+        <label class="label is-large">What did you do yesterday?</label>
+        <div class="control">
+            <textarea class="textarea is-large" placeholder="Try to be specific. But not too much."></textarea>
+        </div>
+        <div class="help">Keep it short.</div>
+    </div>
+
+    <div class="field">
+        <div class="control">
+            <label class="checkbox is-large">
+                <input type="checkbox">
+                Did you acomplish yesterday's goals?
+            </label>
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="label is-large">What will you do today??</label>
+        <div class="control">
+            <textarea class="textarea is-large" placeholder="Keep it short."></textarea>
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="label is-large">Any problems?</label>
+        <div class="control">
+            <textarea class="textarea is-large" placeholder="Don't fill it if you don't have problems."></textarea>
+        </div>
+    </div>
+
+    <div class="field is-grouped">
+        <p class="control">
+            <a class="button is-success is-large">
+                Submit
+            </a>
+        </p>
+        <p class="control">
+            <a class="button is-danger is-large">
+                Away
+            </a>
+        </p>
+    </div>
+
+</div>
