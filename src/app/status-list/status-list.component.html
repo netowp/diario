@@ -1,0 +1,6 @@
+<div class="container">
+    <h1 class="title">Today</h1>
+    <div class="columns">
+        <app-status-card class="column is-half" *ngFor="let status of list" [status]="status"></app-status-card>
+    </div>
+</div>

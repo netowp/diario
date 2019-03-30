@@ -3732,6 +3732,10 @@ mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0:
   dependencies:
     minimist "0.0.8"
 
+moment@^2.24.0:
+  version "2.24.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
+
 move-concurrently@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/move-concurrently/-/move-concurrently-1.0.1.tgz#be2c005fda32e0b29af1f05d7c4b33214c701f92"
@@ -3801,6 +3805,12 @@ negotiator@0.6.1:
 neo-async@^2.5.0, neo-async@^2.6.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.0.tgz#b9d15e4d71c6762908654b5183ed38b753340835"
+
+ngx-moment@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/ngx-moment/-/ngx-moment-3.4.0.tgz#53bd64557e552c612b0f68b975d1c7ed34f28dfc"
+  dependencies:
+    tslib "^1.9.0"
 
 nice-try@^1.0.4:
   version "1.0.5"

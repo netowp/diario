@@ -5,7 +5,7 @@
         </div>
 
         <div class="level-center">
-            <h1 class="level-item title has-text-centered">{{date | date}}</h1>
+            <h1 class="level-item title has-text-centered">{{status.date | date}}</h1>
         </div>
         
         <div class="level-right">
@@ -15,10 +15,12 @@
 
     <hr>
 
+    <!-- <pre>{{status | json}}</pre> -->
+
     <div class="field">
         <label class="label is-large">What did you do yesterday?</label>
         <div class="control">
-            <textarea class="textarea is-large" placeholder="Try to be specific. But not too much."></textarea>
+            <textarea [(ngModel)]="status.yesterday" class="textarea is-large" placeholder="Try to be specific. But not too much."></textarea>
         </div>
         <div class="help">Keep it short.</div>
     </div>
@@ -26,7 +28,7 @@
     <div class="field">
         <div class="control">
             <label class="checkbox is-large">
-                <input type="checkbox">
+                <input type="checkbox" [(ngModel)]="status.accomplished_yesterday">
                 Did you acomplish yesterday's goals?
             </label>
         </div>
@@ -35,27 +37,27 @@
     <div class="field">
         <label class="label is-large">What will you do today??</label>
         <div class="control">
-            <textarea class="textarea is-large" placeholder="Keep it short."></textarea>
+            <textarea class="textarea is-large" [(ngModel)]="status.today" placeholder="Keep it short."></textarea>
         </div>
     </div>
 
     <div class="field">
         <label class="label is-large">Any problems?</label>
         <div class="control">
-            <textarea class="textarea is-large" placeholder="Don't fill it if you don't have problems."></textarea>
+            <textarea class="textarea is-large" [(ngModel)]="status.blockers" placeholder="Don't fill it if you don't have problems."></textarea>
         </div>
     </div>
 
     <div class="field is-grouped">
         <p class="control">
-            <a class="button is-success is-large">
+            <button class="button is-success is-large" (click)="createOne()" type="button">
                 Submit
-            </a>
+            </button>
         </p>
         <p class="control">
-            <a class="button is-danger is-large">
+            <button class="button is-danger is-large">
                 Away
-            </a>
+            </button>
         </p>
     </div>
 
